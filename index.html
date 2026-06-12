@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Trịnh | AI & Automation Engineer</title>
+    <meta name="description" content="Trang web cá nhân của Justin Trịnh (gozvn) - Lập trình viên chuyên về AI Agents, Smart Workspaces, OpenClaw và 9Router.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Space Background Canvas / Starfield effect placeholder -->
+    <div class="bg-stars"></div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span class="logo-symbol me-2">&lt;/&gt;</span>
+                <span class="logo-text">justintrinh<span class="accent-dot">.com</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#setup">Local Workspace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-cta ms-lg-3" href="#contact">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <span class="badge badge-accent mb-3">
+                        <span class="badge-pulse"></span> Available for new experiments
+                    </span>
+                    <h1 class="hero-title mb-3">Hi, I'm <span class="highlight-text-gradient">Justin Trinh</span></h1>
+                    <h2 class="hero-subtitle mb-4">
+                        I build <span id="typed-text" class="typed-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description lead mb-5">
+                        Chuyên gia tối ưu hóa quy trình làm việc thông minh và tích hợp các hệ thống Multi-Agent cục bộ. Đam mê thiết lập hạ tầng AI hiệu năng cao để hỗ trợ lập trình tự động.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                        <a href="#projects" class="btn btn-primary btn-lg px-4 py-3">
+                            <i class="bi bi-rocket-takeoff me-2"></i>Xem Dự Án
+                        </a>
+                        <a href="#setup" class="btn btn-outline-light btn-lg px-4 py-3">
+                            <i class="bi bi-cpu me-2"></i>Workspace Của Mình
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="avatar-glow-container">
+                        <div class="avatar-glow-ring"></div>
+                        <div class="avatar-glow-ring secondary"></div>
+                        <!-- Generating a premium terminal window design on the right -->
+                        <div class="terminal-card shadow-lg">
+                            <div class="terminal-header d-flex align-items-center px-3 py-2">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="terminal-title ms-3">justin@mini-mac ~</span>
+                            </div>
+                            <div class="terminal-body p-3">
+                                <p class="text-secondary mb-1"># Fetching engineer profile...</p>
+                                <p class="text-success mb-2">$ curl -s https://api.justintrinh.com/profile</p>
+                                <div class="terminal-output">
+                                    <span class="key">"name"</span>: <span class="val">"Justin Trinh"</span>,<br>
+                                    <span class="key">"alias"</span>: <span class="val">"gozvn"</span>,<br>
+                                    <span class="key">"skills"</span>: [<br>
+                                    &nbsp;&nbsp;<span class="val">"AI Agents"</span>, <span class="val">"MCP Servers"</span>,<br>
+                                    &nbsp;&nbsp;<span class="val">"9Router Orchestration"</span><br>
+                                    ],<br>
+                                    <span class="key">"status"</span>: <span class="val">"Building Agent Teams ⚡"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Về Bản Thân</h2>
+                <div class="section-subtitle-line"></div>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <!-- Card: Bio -->
+                <div class="col-md-6 col-lg-7">
+                    <div class="about-card p-4 h-100">
+                        <h3 class="card-inner-title mb-3"><i class="bi bi-person-workspace text-cyan me-2"></i>Giới thiệu</h3>
+                        <p class="text-secondary mb-4">
+                            Mình là một kỹ sư phần mềm đam mê công nghệ trí tuệ nhân tạo và tự động hóa quy trình. Mình tập trung vào việc đưa mô hình ngôn ngữ lớn (LLM) từ lý thuyết vào ứng dụng thực tế hàng ngày, đặc biệt là xây dựng các giải pháp Agent hỗ trợ lập trình viên tối ưu hóa 200% năng suất làm việc.
+                        </p>
+                        <p class="text-secondary">
+                            Với triết lý tối giản (**KISS**), hiệu quả (**DRY**) và thực tiễn, mình xây dựng những sản phẩm có giá trị sử dụng cao, giao diện mượt mà và hệ thống ổn định.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card: Tech Stack -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="about-card p-4 h-100">
+                        <h3 class="card-inner-title mb-4"><i class="bi bi-stack text-purple me-2"></i>Tech Stack</h3>
+                        <div class="tech-grid d-flex flex-wrap gap-2">
+                            <span class="tech-tag"><i class="bi bi-filetype-html me-1 text-orange"></i>HTML5 / CSS3</span>
+                            <span class="tech-tag"><i class="bi bi-bootstrap me-1 text-indigo"></i>Bootstrap 5</span>
+                            <span class="tech-tag"><i class="bi bi-filetype-js me-1 text-yellow"></i>JavaScript</span>
+                            <span class="tech-tag"><i class="bi bi-terminal me-1 text-success"></i>Claude Code / OpenClaw</span>
+                            <span class="tech-tag"><i class="bi bi-cpu me-1 text-cyan"></i>9Router / LLM Routing</span>
+                            <span class="tech-tag"><i class="bi bi-git me-1 text-danger"></i>Git & Git Worktree</span>
+                            <span class="tech-tag"><i class="bi bi-database me-1 text-info"></i>PostgreSQL / MongoDB</span>
+                            <span class="tech-tag"><i class="bi bi-box-seam me-1 text-warning"></i>Docker & Docker Compose</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup / Workspace Section -->
+    <section id="setup" class="section-padding bg-section-alt">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">AI Workspace Của Mình</h2>
+                <div class="section-subtitle-line"></div>
+                <p class="lead text-secondary mt-3">Hạ tầng chạy ngầm phục vụ phát triển ứng dụng thông minh.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Device card 1: Intel NUC Server -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="setup-card p-4 h-100">
+                        <div class="setup-icon mb-3">
+                            <i class="bi bi-hdd-network"></i>
+                        </div>
+                        <h3 class="setup-title">Intel NUC Server</h3>
+                        <p class="setup-desc text-secondary">
+                            Máy chủ dịch vụ trung tâm chạy Docker 24/7 để vận hành các MCP (Model Context Protocol) và là hub định tuyến LLM chính.
+                        </p>
+                        <ul class="setup-list">
+                            <li><i class="bi bi-check-circle text-cyan"></i> 9Router (Port 20128)</li>
+                            <li><i class="bi bi-check-circle text-cyan"></i> Local LLMs Inference</li>
+                            <li><i class="bi bi-check-circle text-cyan"></i> MCP Server Hub</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Device card 2: Router Load Balancing -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="setup-card p-4 h-100">
+                        <div class="setup-icon mb-3">
+                            <i class="bi bi-shuffle"></i>
+                        </div>
+                        <h3 class="setup-title">9Router (Proxy & Load Balancer)</h3>
+                        <p class="setup-desc text-secondary">
+                            Giải pháp proxy tích hợp combo model thông minh (SPARK) tự động xoay vòng và fallback khi gặp lỗi/hạn mức rate-limit.
+                        </p>
+                        <ul class="setup-list">
+                            <li><i class="bi bi-check-circle text-cyan"></i> Auto-Fallback 3 cấp độ</li>
+                            <li><i class="bi bi-check-circle text-cyan"></i> Quota Tracking thời gian thực</li>
+                            <li><i class="bi bi-check-circle text-cyan"></i> Gộp nhóm model (Combo pack)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Device card 3: Local Gateway -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="setup-card p-4 h-100">
+                        <div class="setup-icon mb-3">
+                            <i class="bi bi-door-open"></i>
+                        </div>
+                        <h3 class="setup-title">OpenClaw Gateway</h3>
+                        <p class="setup-desc text-secondary">
+                            Kết nối các AI Coding Agent từ máy cá nhân (Mac mini) trực tiếp đến máy chủ 9Router trên NUC để lập trình tự động hóa cực nhanh.
+                        </p>
+                        <ul class="setup-list">
+                            <li><i class="bi bi-check-circle text-cyan"></i> Tự động hóa CLI chat</li>
+                            <li><i class="bi bi-check-circle text-cyan"></i> Custom Skills & Playbooks</li>
+                            <li><i class="bi bi-check-circle text-cyan"></i> An toàn Command Allowlist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Dự Án Tiêu Biểu</h2>
+                <div class="section-subtitle-line"></div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-content p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="project-type text-cyan">Multi-Agent</span>
+                                <a href="https://github.com/gozvn/agent_team" class="project-link-icon" target="_blank"><i class="bi bi-github"></i></a>
+                            </div>
+                            <h3 class="project-title">agent_team</h3>
+                            <p class="project-desc text-secondary">
+                                Blueprint triển khai đội SOC (Security Operations Center) đa agent trên nền tảng GoClaw. Tách biệt 3 lớp kiến trúc: Agent Roles, Workflows (skills) và Tools (MCP).
+                            </p>
+                            <div class="project-tags">
+                                <span>GoClaw</span>
+                                <span>Python</span>
+                                <span>Multi-Agent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <div class="project-card-glow"></div>
+                        <div class="project-content p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="project-type text-purple">Claude Code</span>
+                                <a href="https://github.com/gozvn/jusintrinh-com" class="project-link-icon" target="_blank"><i class="bi bi-github"></i></a>
+                            </div>
+                            <h3 class="project-title">jusintrinh-com</h3>
+                            <p class="project-desc text-secondary">
+                                Trang web cá nhân của mình, được xây dựng theo chuẩn cấu trúc ClaudeKit giúp các AI Agent dễ dàng đọc hiểu, cập nhật tính năng và tự động kiểm thử.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>Bootstrap 5</span>
+                                <span>ClaudeKit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-section-alt">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Kết Nối Với Mình</h2>
+                <div class="section-subtitle-line"></div>
+                <p class="text-secondary mt-3">Hãy cùng thảo luận về các giải pháp AI tự động hóa hoặc hợp tác xây dựng sản phẩm.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-box p-4 p-md-5">
+                        <div class="row g-4">
+                            <div class="col-md-5">
+                                <h3 class="card-inner-title mb-4">Thông tin liên hệ</h3>
+                                <div class="contact-details">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="contact-icon-bg me-3"><i class="bi bi-envelope-fill text-cyan"></i></div>
+                                        <div>
+                                            <div class="contact-label">Email</div>
+                                            <a href="mailto:mrgozvn@gmail.com" class="contact-value">mrgozvn@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="contact-icon-bg me-3"><i class="bi bi-github text-purple"></i></div>
+                                        <div>
+                                            <div class="contact-label">GitHub</div>
+                                            <a href="https://github.com/gozvn" target="_blank" class="contact-value">github.com/gozvn</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="contact-icon-bg me-3"><i class="bi bi-geo-alt-fill text-danger"></i></div>
+                                        <div>
+                                            <div class="contact-label">Địa điểm</div>
+                                            <div class="contact-value">Việt Nam</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-7">
+                                <form id="contactForm" class="contact-form">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label text-secondary">Tên của bạn</label>
+                                        <input type="text" class="form-control" id="name" required placeholder="Nhập tên của bạn">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label text-secondary">Email liên hệ</label>
+                                        <input type="email" class="form-control" id="email" required placeholder="name@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label text-secondary">Nội dung tin nhắn</label>
+                                        <textarea class="form-control" id="message" rows="4" required placeholder="Nhập tin nhắn của bạn ở đây..."></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100 py-3 mt-2">
+                                        <i class="bi bi-send-fill me-2"></i>Gửi Tin Nhắn
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-4">
+        <div class="container text-center">
+            <p class="mb-2 text-secondary">&copy; 2026 Justin Trinh. Designed with passion for AI & Automations.</p>
+            <p class="text-secondary-muted small">Built on top of Bootstrap 5 & ClaudeKit framework.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="btn btn-back-to-top shadow" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
