@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // --- 1. Typing Text Animation ---
     const phrases = [
-        "AI Agent Teams 🤖",
-        "Smart Workflows ⚡",
-        "MCP Servers 🛠️",
-        "Automated Setups 🚀"
+        "Creative Videos 🎬",
+        "2D Animations 🎨",
+        "Stunning Web Designs 💻",
+        "Smart Automations ⚡"
     ];
     
     const typedSpan = document.getElementById("typed-text");
