@@ -145,10 +145,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const originalHTML = btn.innerHTML;
             
             btn.disabled = true;
-            btn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Đang gửi...`;
+            btn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending...`;
             
             setTimeout(() => {
-                btn.innerHTML = `<i class="bi bi-check-lg me-2"></i>Đã gửi thành công!`;
+                btn.innerHTML = `<i class="bi bi-check-lg me-2"></i>Message Sent!`;
                 btn.classList.remove("btn-primary");
                 btn.classList.add("btn-success");
                 
